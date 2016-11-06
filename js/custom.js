@@ -130,7 +130,7 @@ $(document).ready(function() {
      Scroll to Top Button it is called for scrolling down to top at html
      --------------------------------------------- */
     $('body').append('<div id="toTop" class="btn btn-info"><span class="fa fa-dot-circle-o top"></span><br>TOP</div>');
-    
+
 
     $('#toTop').on('click',function () {
         $("html, body").animate({scrollTop: 0}, 600);
@@ -146,7 +146,7 @@ $(document).ready(function() {
 
 
     /* ---------------------------------------------
-      Pre loader loader 
+      Pre loader loader
      --------------------------------------------- */
 
      $(".se-pre-con").fadeOut("slow");
@@ -161,7 +161,7 @@ $(document).ready(function() {
         max_rows: 2,
         speed: 600,
         direction: 'up',
-        duration: 4000,
+        duration: 5000,
         autostart: 1,
         pauseOnHover: 0,
         prevButton: $('#prev-button'),
@@ -192,7 +192,7 @@ $(document).ready(function() {
 
 
     /* ---------------------------------------------
-     Date picker  
+     Date picker
      --------------------------------------------- */
 
     $("#from").datepicker({
@@ -212,7 +212,7 @@ $(document).ready(function() {
         }
     });
 
-   
+
 
 
     /* ---------------------------------------------
@@ -234,9 +234,9 @@ $(document).ready(function() {
 
 
     /* ---------------------------------------------
-     Form 
+     Form
      --------------------------------------------- */
-    
+
     if (!String.prototype.trim) {
         (function () {
             // Make sure we trim BOM and NBSP
@@ -274,26 +274,26 @@ $(window).on({
     load:function(){
 
         /* ---------------------------------------------
-          Scroll Box 
+          Scroll Box
          --------------------------------------------- */
 
         $(".mobile-menu").mCustomScrollbar({theme: "minimal"});
         $(".archive-post").mCustomScrollbar({theme: "minimal-dark"});
 
 
-     }, 
+     },
 
     scroll:function(){
 
         /* ---------------------------------------------
-        Scroll to Top 
+        Scroll to Top
         --------------------------------------------- */
- 
+
         if ($(this).scrollTop() !== 0) {
             $('#toTop').fadeIn();
         } else {
             $('#toTop').fadeOut();
-        } 
+        }
     }
 
 });
@@ -304,7 +304,7 @@ $(window).on({
      This is for Mobile Menu
      --------------------------------------------- */
 
-    //Nav Icon at mobile 
+    //Nav Icon at mobile
     $('.nav-icon').on('click',function () {
         $(this).toggleClass('open');
     });
