@@ -1381,13 +1381,13 @@ input[type='radio']:checked:before {
 .social ul li a {
     display: inline-block;
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     color: #FFE;
     background-color: #909AA0;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
-    padding-top: 14px;
+    padding-top: 7px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1819,9 +1819,9 @@ footer ul li a:hover{
 .post-thumb .social,
 .paragraph-padding .social{
     position: absolute;
-    top: 50px;
+    top: 0;
     margin: 0;
-    margin-left: -76px;
+    margin-left: -85px;
 }
 .post-thumb .social ul li,
 .paragraph-padding .social ul li{
@@ -2876,4 +2876,12 @@ textarea.input_field{
     .paragraph-padding { padding-left: 55px;}
     .paragraph-padding .post-thumb .social, .paragraph-padding .social {top: 0px;margin-left: -55px;}
     .archive .post-style2 img{height: auto;width: auto;}
+}
+
+#sticky-social.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 30px;
+    z-index: 10000;
+    /*border-radius: 0 0 0.5em 0.5em;
 }

@@ -265,6 +265,27 @@ $(document).ready(function() {
         }
     }
 
+    /* ------------------------------------------------
+    Sticky Social Bar
+    --------------------------------------------------*/
+
+    function sticky_relocate() {
+      var window_top = $(window).scrollTop();
+      var div_top = $('#sticky-anchor').offset().top;
+      var div_bottom = $('#sticky-anchor-bottom').offset().top;
+      console.log(div_top);
+      if (window_top > div_top && window_top < div_bottom - $('#sticky-social').outerHeight()) {
+        $('#sticky-social').addClass('stick');
+        // $('#sticky-anchor').height($('#sticky-social').outerHeight());
+      } else {
+        $('#sticky-social').removeClass('stick');
+        $('#sticky-anchor').height(0);
+      }
+    }
+
+    $(window).scroll(sticky_relocate);
+    // sticky_relocate();
+
 });
 
 
@@ -279,7 +300,6 @@ $(window).on({
 
         $(".mobile-menu").mCustomScrollbar({theme: "minimal"});
         $(".archive-post").mCustomScrollbar({theme: "minimal-dark"});
-
 
      },
 
